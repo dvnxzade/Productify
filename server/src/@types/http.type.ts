@@ -1,0 +1,7 @@
+import type { NextFunction, Request, Response } from "express";
+
+export type HttpType = (
+    req : Request,
+    res : Response,
+    next? : NextFunction
+) => Response | Promise<Response>;
